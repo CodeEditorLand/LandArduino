@@ -314,11 +314,11 @@
 	},
 	"devDependencies": {
 		"@types/glob": "8.1.0",
-		"@types/node": "22.13.9",
+		"@types/node": "22.13.10",
 		"@types/strftime": "0.9.8",
 		"@types/uuid": "10.0.0",
 		"@types/winreg": "1.2.36",
-		"acorn": "8.14.0",
+		"acorn": "8.14.1",
 		"ajv": "8.17.1",
 		"del": "8.0.0",
 		"download": "8.0.0",
