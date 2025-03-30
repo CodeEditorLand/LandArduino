@@ -1,10 +1,35 @@
 {
 	"name": "arduino-manager",
+	"version": "0.0.1",
+	"private": false,
 	"description": "",
+	"keywords": [
+		"codeeditorland",
+		"land",
+		"playform"
+	],
+	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/LandArduino#readme",
+	"bugs": {
+		"url": "HTTPS://GitHub.Com/CodeEditorLand/LandArduino/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+HTTPS://github.com/CodeEditorLand/LandArduino.git"
+	},
+	"license": "SEE LICENSE IN LICENSE",
+	"author": {
+		"name": "Source 🖋️ Open 👐🏻",
+		"email": "Source/Open@Editor.Land",
+		"url": "HTTPS://Editor.Land"
+	},
+	"type": "module",
 	"main": "index.js",
-	"scripts": {},
+	"scripts": {
+		"prepublishOnly": "Build 'Source/**/*.ts'"
+	},
 	"dependencies": {},
 	"devDependencies": {
+		"@playform/build": "0.2.1",
 		"css-loader": "7.1.2",
 		"file-loader": "6.2.0",
 		"mini-css-extract-plugin": "2.9.2",
@@ -15,6 +40,9 @@
 		"style-loader": "4.0.0",
 		"svg-url-loader": "8.0.0",
 		"ts-loader": "9.5.2"
+	},
+	"publishConfig": {
+		"access": "public"
 	},
 	"overrides": {
 		"async": "3.2.3",

@@ -1,10 +1,33 @@
 {
 	"name": "@codeeditorland/arduino",
 	"displayName": "Arduino (deprecated)",
+	"version": "0.0.1",
+	"private": false,
 	"description": "Arduino for Visual Studio Code. This extension is deprecated and no longer maintained.",
+	"keywords": [
+		"codeeditorland",
+		"land",
+		"playform"
+	],
+	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/LandArduino#readme",
+	"bugs": {
+		"url": "HTTPS://GitHub.Com/CodeEditorLand/LandArduino/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+HTTPS://github.com/CodeEditorLand/LandArduino.git"
+	},
+	"license": "SEE LICENSE IN LICENSE",
+	"author": {
+		"name": "Source 🖋️ Open 👐🏻",
+		"email": "Source/Open@Editor.Land",
+		"url": "HTTPS://Editor.Land"
+	},
+	"type": "module",
 	"main": "./out/src/extension",
 	"scripts": {
-		"build": "gulp build --mode=production"
+		"build": "gulp build --mode=production",
+		"prepublishOnly": "Build 'Source/**/*.ts'"
 	},
 	"contributes": {
 		"breakpoints": [
@@ -313,6 +336,7 @@
 		"winston": "3.17.0"
 	},
 	"devDependencies": {
+		"@playform/build": "0.2.1",
 		"@types/glob": "8.1.0",
 		"@types/node": "22.13.14",
 		"@types/strftime": "0.9.8",
@@ -332,6 +356,9 @@
 		"ms-vscode.cpptools",
 		"ms-vscode.vscode-serial-monitor"
 	],
+	"publishConfig": {
+		"access": "public"
+	},
 	"icon": "images/arduino.png",
 	"preview": true,
 	"overrides": {
